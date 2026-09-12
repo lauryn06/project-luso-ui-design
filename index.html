@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quick Job — Get it done. Get paid in full.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#" class="brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <circle cx="15" cy="17" r="10" fill="#4C9AFF"/>
+          <circle cx="25" cy="23" r="10" fill="#0B3D91"/>
+        </svg>
+      </span>
+      Quick Job
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#how">How it works</a>
+      <a href="#categories">Categories</a>
+      <a href="#providers">For providers</a>
+      <a href="#trust">Trust &amp; safety</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="#" class="btn btn--ghost-on-nav">Log in</a>
+      <a href="#" class="btn btn--primary">Get started</a>
+    </div>
+
+    <button class="nav__burger" id="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+      <circle cx="120" cy="640" r="220" fill="#4C9AFF" opacity="0.18"/>
+      <path d="M0,500 C300,420 900,600 1200,480 L1200,800 L0,800 Z" fill="#EAF2FF"/>
+    </svg>
+  </div>
+
+  <div class="hero__photo" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1697383904932-94304530a3dd?fm=jpg&amp;q=70&amp;w=1200&amp;auto=format&amp;fit=crop" alt="">
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow-free-tag">Built in Malawi, paid the Malawi way</p>
+      <h1>Get it done.<br>Get paid in full.</h1>
+      <p class="hero__sub">
+        Quick Job connects people who need something done with skilled
+        providers across Malawi — designers, tutors, tradespeople and more.
+        Pay safely with mobile money or bank transfer, and providers keep
+        every kwacha they earn.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="#" class="btn btn--primary btn--lg">Find a provider</a>
+        <a href="#" class="btn btn--outline btn--lg">Become a provider</a>
+      </div>
+
+      <div class="hero__stats">
+        <div><strong>0%</strong><span>commission ever</span></div>
+        <div><strong>MK 48K+</strong><span>paid out to providers</span></div>
+        <div><strong>4.9★</strong><span>average rating</span></div>
+      </div>
+    </div>
+
+    <div class="hero__demo" aria-hidden="true">
+      <div class="demo-card">
+        <p class="demo-card__label">I need&hellip;</p>
+        <div class="demo-search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#6B7A8F" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="#6B7A8F" stroke-width="2" stroke-linecap="round"/></svg>
+          <span id="typewriter"></span><span class="caret">|</span>
+        </div>
+
+        <div class="demo-match" id="demoMatch">
+          <div class="demo-match__avatar">CB</div>
+          <div class="demo-match__info">
+            <p class="demo-match__name">Chisomo B. <span class="verified">✓</span></p>
+            <p class="demo-match__role">Graphic &amp; Logo Design</p>
+            <p class="demo-match__meta">★ 4.9 · 87 reviews · responds in &lt;1hr</p>
+          </div>
+          <span class="demo-match__price">from MK 15,000</span>
+        </div>
+
+        <div class="demo-status">
+          <span class="dot dot--paid"></span> Payment protected until you confirm the work
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAYMENT STRIP ============ -->
+<section class="strip">
+  <p class="strip__label">Paid the way Malawi actually pays</p>
+  <div class="strip__items">
+    <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#0B3D91" stroke-width="2"/><path d="M3 9h18" stroke="#0B3D91" stroke-width="2"/></svg> Airtel MOney & TNM</span>
+    <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 10h18M5 10V7l7-3 7 3v3M4 10v9h16v-9" stroke="#0B3D91" stroke-width="2" stroke-linejoin="round"/></svg> Bank transfer</span>
+    <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="#0B3D91" stroke-width="2"/><circle cx="17" cy="12" r="2" stroke="#0B3D91" stroke-width="2"/></svg> Card</span>
+    <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-4z" stroke="#0B3D91" stroke-width="2" stroke-linejoin="round"/></svg> Licensed payment partner</span>
+  </div>
+</section>
+
+<section class="animation_service_providers">
+    
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section" id="how">
+  <div class="section__head">
+    <h2>From "I need this done" to "job complete"</h2>
+    <p>Five stages, the same way every time — so both sides know exactly where things stand.</p>
+  </div>
+
+  <ol class="steps">
+    <li class="step">
+      <span class="step__num">1</span>
+      <h3>Discover</h3>
+      <p>Search or browse for the service you need and compare providers by price, rating and past work.</p>
+    </li>
+    <li class="step">
+      <span class="step__num">2</span>
+      <h3>Order &amp; pay</h3>
+      <p>Pick a package and pay upfront by mobile money, bank transfer or card. Work only starts once payment is confirmed.</p>
+    </li>
+    <li class="step">
+      <span class="step__num">3</span>
+      <h3>Work gets done</h3>
+      <p>You and the provider talk through Quick Job's built-in messaging, so there's always a record of what was agreed.</p>
+    </li>
+    <li class="step">
+      <span class="step__num">4</span>
+      <h3>Delivery &amp; confirmation</h3>
+      <p>The provider delivers the work. You review it and confirm — or it auto-confirms after a few days.</p>
+    </li>
+    <li class="step">
+      <span class="step__num">5</span>
+      <h3>Review</h3>
+      <p>Both sides rate each other, building the track record that helps everyone choose better next time.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ COMMISSION BAND ============ -->
+<section class="commission">
+  <div class="commission__inner">
+    <div>
+      <span class="commission__num">0%</span>
+      <p>commission on any order, ever</p>
+    </div>
+    <div class="commission__divider" aria-hidden="true"></div>
+    <div>
+      <span class="commission__num">100%</span>
+      <p>of what a buyer pays reaches the provider</p>
+    </div>
+  </div>
+  <p class="commission__note">
+    Quick Job never touches or holds order money — it moves straight from buyer to
+    provider through our licensed payment partner. The platform earns instead through
+    optional provider subscriptions, and every provider gets full access free for their
+    first six months.
+  </p>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="section section--alt" id="categories">
+  <div class="section__head">
+    <h2>Whatever the job, someone here can do it</h2>
+    <p>A few of the categories providers list under.</p>
+  </div>
+
+  <div class="cat-grid">
+    <div class="cat-card cat-card--photo">
+      <img src="https://images.unsplash.com/photo-1681164315734-355fb1131685?fm=jpg&amp;q=70&amp;w=800&amp;auto=format&amp;fit=crop" alt="Graphic designer working at a monitor" loading="lazy">
+      <div class="cat-card__body">
+        <h3>Design &amp; creative</h3>
+        <p>Logos, branding, illustration, video editing.</p>
+      </div>
+    </div>
+    <div class="cat-card">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M8 3L4 7l4 4M16 3l4 4-4 4M14 4l-4 16" stroke="#0B3D91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3>Web &amp; tech</h3>
+      <p>Websites, apps, IT support, tech setup.</p>
+    </div>
+    <div class="cat-card">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 19.5V6a2 2 0 012-2h13v14H6a2 2 0 00-2 2zM4 19.5A2 2 0 006 21.5h13" stroke="#0B3D91" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <h3>Tutoring &amp; lessons</h3>
+      <p>School subjects, languages, exam prep.</p>
+    </div>
+    <div class="cat-card cat-card--photo">
+      <img src="https://images.unsplash.com/photo-1779031242515-205111711b23?fm=jpg&amp;q=70&amp;w=800&amp;auto=format&amp;fit=crop" alt="Carpenter working with tools in a workshop" loading="lazy">
+      <div class="cat-card__body">
+        <h3>Home &amp; trades</h3>
+        <p>Plumbing, electrical, carpentry, repairs.</p>
+      </div>
+    </div>
+    <div class="cat-card cat-card--photo">
+      <img src="https://images.unsplash.com/photo-1677495392567-aadaafb2e340?fm=jpg&amp;q=70&amp;w=800&amp;auto=format&amp;fit=crop" alt="Wedding photography detail shot" loading="lazy">
+      <div class="cat-card__body">
+        <h3>Events &amp; photography</h3>
+        <p>Weddings, parties, portraits, coverage.</p>
+      </div>
+    </div>
+    <div class="cat-card">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 19.5V4.5A1.5 1.5 0 015.5 3h9L20 8.5v11a1.5 1.5 0 01-1.5 1.5h-13A1.5 1.5 0 014 19.5z" stroke="#0B3D91" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 12h8M8 16h5" stroke="#0B3D91" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <h3>Writing &amp; admin</h3>
+      <p>CVs, proposals, data entry, translation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOR PROVIDERS / FOR BUYERS ============ -->
+<section class="section" id="providers">
+  <div class="split">
+    <div class="split__panel">
+      <span class="split__tag" style="background:#EAF2FF;color:#0B3D91;">For providers</span>
+      <h2>Turn skills you already have into steady work</h2>
+      <ul class="check-list">
+        <li>List what you offer and build a public track record of reviews</li>
+        <li>Get paid in full, upfront, before you start any job</li>
+        <li>Message buyers directly — no guesswork about what was agreed</li>
+      </ul>
+      <a href="#" class="btn btn--primary">Start selling</a>
+    </div>
+    <div class="split__panel split__panel--dark">
+      <span class="split__tag" style="background:rgba(255,255,255,.12);color:#fff;">For buyers</span>
+      <h2>Find someone qualified, quickly and safely</h2>
+      <ul class="check-list check-list--light">
+        <li>Compare providers by price, rating and real past work</li>
+        <li>Your payment is protected until you confirm the job is done</li>
+        <li>Raise a dispute any time before confirming — a real person reviews it</li>
+      </ul>
+      <a href="#" class="btn btn--outline btn--outline-light">Post a job</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST & SAFETY ============ -->
+<section class="section section--alt" id="trust">
+  <div class="section__head">
+    <h2>Built so both sides can trust it</h2>
+    <p>A marketplace only works if people believe it's fair.</p>
+  </div>
+
+  <div class="trust-grid">
+    <div class="trust-card">
+      <h3>Reviews &amp; ratings</h3>
+      <p>Both sides rate each other honestly after a job. Reviews are checked for abuse and can't be edited afterward.</p>
+    </div>
+    <div class="trust-card">
+      <h3>Dispute resolution</h3>
+      <p>If buyer and provider disagree, a trained staff member reviews the evidence and aims to resolve it within two business days.</p>
+    </div>
+    <div class="trust-card">
+      <h3>Content moderation</h3>
+      <p>Reports of bad behaviour or fake listings are reviewed by staff, with a clear path from warning to suspension to ban.</p>
+    </div>
+    <div class="trust-card">
+      <h3>A permanent paper trail</h3>
+      <p>Every suspension, refund or decision staff make is logged permanently — nothing happens quietly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <h2>Ready to get something done?</h2>
+  <p>Join Quick Job free — sign-up takes about two minutes.</p>
+  <div class="cta__actions">
+    <a href="#" class="btn btn--primary btn--lg">Create your account</a>
+    <a href="#" class="btn btn--ghost-dark btn--lg">Log in</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="#" class="brand brand--footer">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="30" height="30">
+            <circle cx="15" cy="17" r="10" fill="#4C9AFF"/>
+            <circle cx="25" cy="23" r="10" fill="#1E5FCC"/>
+          </svg>
+        </span>
+        Quick Job
+      </a>
+      <p>A fair, local marketplace for getting things done.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Product</h4>
+      <a href="#how">How it works</a>
+      <a href="#categories">Categories</a>
+      <a href="#">Pricing</a>
+    </div>
+    <div class="footer__col">
+      <h4>Company</h4>
+      <a href="#trust">Trust &amp; safety</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer__col">
+      <h4>Legal</h4>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">Data protection</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Quick Job. Built for Malawi.</span>
+  </div>
+</footer>
+
+<script>
+  // nav scroll state
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('nav--solid', window.scrollY > 40);
+  });
+
+  // mobile menu
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('nav__links--open');
+    burger.classList.toggle('nav__burger--open');
+  });
+
+  // typewriter in hero search
+  const words = ['a logo designer', 'a math tutor', 'a plumber', 'a wedding photographer', 'a web developer'];
+  const el = document.getElementById('typewriter');
+  let wi = 0, ci = 0, deleting = false;
+
+  function tick() {
+    const word = words[wi];
+    if (!deleting) {
+      ci++;
+      el.textContent = word.slice(0, ci);
+      if (ci === word.length) { deleting = true; setTimeout(tick, 1200); return; }
+    } else {
+      ci--;
+      el.textContent = word.slice(0, ci);
+      if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; }
+    }
+    setTimeout(tick, deleting ? 40 : 70);
+  }
+  tick();
+</script>
+</body>
+</html>
