@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overview — Quick Job Seller</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dash-body">
+
+<div class="dash-shell">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="dash-sidebar" id="sidebar">
+    <div class="dash-sidebar__top">
+      <a href="index.html" class="brand brand--onphoto">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="30" height="30">
+            <circle cx="15" cy="17" r="10" fill="#4C9AFF"/>
+            <circle cx="25" cy="23" r="10" fill="#FFFFFF"/>
+          </svg>
+        </span>
+        Quick Job
+      </a>
+      <span class="role-pill">Seller</span>
+    </div>
+
+    <div class="dash-profile">
+      <div class="dash-profile__avatar">CB</div>
+      <div>
+        <p class="dash-profile__name">Chisomo Banda</p>
+        <p class="dash-profile__meta">★ 4.9 · Top Rated</p>
+      </div>
+    </div>
+
+    <nav class="dash-nav">
+      <a href="dashboard.html" class="dash-nav__item dash-nav__item--active">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="12" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="16" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg>
+        Overview
+      </a>
+      <a href="orders.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 19.5V4.5A1.5 1.5 0 015.5 3h9L20 8.5v11a1.5 1.5 0 01-1.5 1.5h-13A1.5 1.5 0 014 19.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Orders
+        <span class="dash-nav__badge">2</span>
+      </a>
+      <a href="gigs.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M12 19l7-7 3 3-7 7-3-3z" stroke="currentColor" stroke-width="1.8"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        My Gigs
+      </a>
+      <a href="earnings.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Earnings
+      </a>
+      <a href="messages.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v11H7l-3 3V5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Messages
+        <span class="dash-nav__badge dash-nav__badge--sky">3</span>
+      </a>
+      <a href="profile.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Profile
+      </a>
+
+      <div class="dash-nav__divider"></div>
+
+      <a href="settings.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        Settings
+      </a>
+      <a href="login.html" class="dash-nav__item dash-nav__item--danger">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 17l5-5-5-5M21 12H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Sign out
+      </a>
+    </nav>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <div class="dash-main">
+
+    <header class="dash-topbar">
+      <button class="dash-burger" id="dashBurger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div>
+        <h1>Overview</h1>
+        <p>Welcome back, Chisomo — here's how your gigs are doing.</p>
+      </div>
+      <div class="dash-topbar__actions">
+        <button class="icon-btn" aria-label="Notifications">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="#1F2937" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.7 21a2 2 0 01-3.4 0" stroke="#1F2937" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span class="icon-btn__badge">2</span>
+        </button>
+        <div class="dash-topbar__avatar">CB</div>
+      </div>
+    </header>
+
+    <!-- stat cards -->
+    <section class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-card__top">
+          <span class="stat-card__icon stat-card__icon--green">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M17 6.5C17 4.6 14.8 3 12 3S7 4.6 7 6.5 9.2 10 12 10s5 1.4 5 3.5-2.2 3.5-5 3.5-5-1.6-5-3.5" stroke="#1E9E6D" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span class="stat-card__delta stat-card__delta--up">↗ 24%</span>
+        </div>
+        <p class="stat-card__num">MK 485,000</p>
+        <p class="stat-card__label">Total earnings <span>This month</span></p>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-card__top">
+          <span class="stat-card__icon stat-card__icon--blue">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 19.5V4.5A1.5 1.5 0 015.5 3h9L20 8.5v11a1.5 1.5 0 01-1.5 1.5h-13A1.5 1.5 0 014 19.5z" stroke="#0B3D91" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="stat-card__delta stat-card__delta--up">↗ 1</span>
+        </div>
+        <p class="stat-card__num">2</p>
+        <p class="stat-card__label">Active orders <span>Due this week</span></p>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-card__top">
+          <span class="stat-card__icon stat-card__icon--purple">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" stroke="#7C5CFC" stroke-width="1.8"/><circle cx="12" cy="12" r="3" stroke="#7C5CFC" stroke-width="1.8"/></svg>
+          </span>
+          <span class="stat-card__delta stat-card__delta--up">↗ 11%</span>
+        </div>
+        <p class="stat-card__num">1,312</p>
+        <p class="stat-card__label">Profile views <span>Last 7 days</span></p>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-card__top">
+          <span class="stat-card__icon stat-card__icon--amber">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.7 1.1 6.6-5.8-3.1-5.8 3.1 1.1-6.6-4.8-4.7 6.6-.9L12 2.5z" stroke="#E8A33D" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="stat-card__delta stat-card__delta--up">↗ 0.1</span>
+        </div>
+        <p class="stat-card__num">4.9</p>
+        <p class="stat-card__label">Avg. rating <span>87 reviews</span></p>
+      </div>
+    </section>
+
+    <!-- charts row -->
+    <section class="panel-grid">
+      <div class="panel panel--earnings">
+        <div class="panel__head">
+          <div>
+            <h2>Earnings overview</h2>
+            <p>Last 7 months</p>
+          </div>
+          <span class="pill pill--green">+24% this month</span>
+        </div>
+
+        <svg class="earnings-chart" viewBox="0 0 700 300" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="earningsFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#4C9AFF" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#4C9AFF" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+
+          <line x1="0" y1="260" x2="700" y2="260" stroke="#D8E0EA" stroke-width="1"/>
+          <line x1="0" y1="192" x2="700" y2="192" stroke="#D8E0EA" stroke-width="1"/>
+          <line x1="0" y1="124" x2="700" y2="124" stroke="#D8E0EA" stroke-width="1"/>
+          <line x1="0" y1="56"  x2="700" y2="56"  stroke="#D8E0EA" stroke-width="1"/>
+
+          <path class="earnings-chart__area" d="M20,194 C76.5,194 76.5,172 133,172 C189.5,172 189.5,181 246,181 C302.5,181 302.5,124 359,124 C415.5,124 415.5,132 472,132 C528.5,132 528.5,115 585,115 C641.5,115 641.5,47 698,47 L698,260 L20,260 Z" fill="url(#earningsFill)"/>
+          <path class="earnings-chart__line" d="M20,194 C76.5,194 76.5,172 133,172 C189.5,172 189.5,181 246,181 C302.5,181 302.5,124 359,124 C415.5,124 415.5,132 472,132 C528.5,132 528.5,115 585,115 C641.5,115 641.5,47 698,47" fill="none" stroke="#0B3D91" stroke-width="3" stroke-linecap="round"/>
+
+          <circle cx="698" cy="47" r="6" fill="#0B3D91"/>
+          <circle cx="698" cy="47" r="10" fill="#0B3D91" opacity="0.2"/>
+        </svg>
+        <div class="earnings-chart__labels">
+          <span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span>
+        </div>
+      </div>
+
+      <div class="panel panel--week">
+        <div class="panel__head">
+          <h2>This week</h2>
+        </div>
+
+        <div class="week-chart">
+          <div class="week-chart__bar"><div class="week-chart__seg week-chart__seg--views" style="height:58%"></div><div class="week-chart__seg week-chart__seg--clicks" style="height:20%"></div></div>
+          <div class="week-chart__bar"><div class="week-chart__seg week-chart__seg--views" style="height:64%"></div><div class="week-chart__seg week-chart__seg--clicks" style="height:24%"></div></div>
+          <div class="week-chart__bar"><div class="week-chart__seg week-chart__seg--views" style="height:60%"></div><div class="week-chart__seg week-chart__seg--clicks" style="height:22%"></div></div>
+          <div class="week-chart__bar"><div class="week-chart__seg week-chart__seg--views" style="height:82%"></div><div class="week-chart__seg week-chart__seg--clicks" style="height:14%"></div></div>
+          <div class="week-chart__bar"><div class="week-chart__seg week-chart__seg--views" style="height:92%"></div><div class="week-chart__seg week-chart__seg--clicks" style="height:8%"></div></div>
+          <div class="week-chart__bar"><div class="week-chart__seg week-chart__seg--views" style="height:80%"></div><div class="week-chart__seg week-chart__seg--clicks" style="height:16%"></div></div>
+          <div class="week-chart__bar"><div class="week-chart__seg week-chart__seg--views" style="height:66%"></div><div class="week-chart__seg week-chart__seg--clicks" style="height:20%"></div></div>
+        </div>
+        <div class="week-chart__labels">
+          <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+        </div>
+
+        <div class="week-legend">
+          <span><i class="dot-legend dot-legend--blue"></i>Views</span>
+          <span><i class="dot-legend dot-legend--sky"></i>Clicks</span>
+        </div>
+
+        <ul class="week-stats">
+          <li><span>Conversion rate</span><strong>24.3%</strong></li>
+          <li><span>Avg. response</span><strong>&lt; 1 hr</strong></li>
+          <li><span>Repeat clients</span><strong>38%</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- recent orders -->
+    <section class="panel panel--orders">
+      <div class="panel__head">
+        <h2>Recent orders</h2>
+        <a href="#" class="link-muted">View all →</a>
+      </div>
+
+      <ul class="order-list">
+        <li class="order-row">
+          <div class="order-row__buyer">
+            <span class="avatar-circle">BN</span>
+            <div>
+              <p class="order-row__name">Blessings Nkosi</p>
+              <p class="order-row__gig">Logo &amp; Brand Identity Package</p>
+            </div>
+          </div>
+          <span class="order-row__price">MK 150,000</span>
+          <span class="badge badge--progress">In progress</span>
+          <span class="order-row__date">14 Mar 2026</span>
+        </li>
+        <li class="order-row">
+          <div class="order-row__buyer">
+            <span class="avatar-circle">TP</span>
+            <div>
+              <p class="order-row__name">Thandiwe Phiri</p>
+              <p class="order-row__gig">Business Card Design</p>
+            </div>
+          </div>
+          <span class="order-row__price">MK 35,000</span>
+          <span class="badge badge--review">Awaiting review</span>
+          <span class="order-row__date">11 Mar 2026</span>
+        </li>
+        <li class="order-row">
+          <div class="order-row__buyer">
+            <span class="avatar-circle">KM</span>
+            <div>
+              <p class="order-row__name">Kondwani Mwale</p>
+              <p class="order-row__gig">Social Media Design Kit</p>
+            </div>
+          </div>
+          <span class="order-row__price">MK 60,000</span>
+          <span class="badge badge--done">Delivered</span>
+          <span class="order-row__date">6 Mar 2026</span>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+</div>
+
+<script>
+  const burger = document.getElementById('dashBurger');
+  const sidebar = document.getElementById('sidebar');
+  burger.addEventListener('click', () => sidebar.classList.toggle('dash-sidebar--open'));
+</script>
+</body>
+</html>
