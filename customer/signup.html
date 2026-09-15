@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign up — Quick Job</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-wrap">
+
+  <aside class="auth-side" id="authSide">
+    <img class="auth-side__img" id="sideImg" src="https://images.unsplash.com/photo-1687422808191-93810cd07ab0?fm=jpg&amp;q=70&amp;w=1200&amp;auto=format&amp;fit=crop" alt="">
+    <div class="auth-side__overlay"></div>
+
+    <div class="auth-side__content">
+      <a href="index.html" class="brand brand--onphoto">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34">
+            <circle cx="15" cy="17" r="10" fill="#4C9AFF"/>
+            <circle cx="25" cy="23" r="10" fill="#FFFFFF"/>
+          </svg>
+        </span>
+        Quick Job
+      </a>
+
+      <div class="auth-side__bottom">
+        <h2 id="sideHeadline">Start getting paid for<br>what you're already good at.</h2>
+        <p id="sideSub">List your services, set your price, and get paid in full — every time.</p>
+
+        <div class="auth-floatcard">
+          <div class="auth-floatcard__row">
+            <span class="dot dot--paid"></span>
+            <span id="sideNote">Free for your first 6 months</span>
+          </div>
+          <div class="auth-floatcard__stat">
+            <strong id="sideStatNum">100%</strong><span id="sideStatLabel">of payment reaches you</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="auth-main">
+    <div class="auth-card">
+      <a href="index.html" class="brand auth-card__brand-mobile">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="30" height="30">
+            <circle cx="15" cy="17" r="10" fill="#4C9AFF"/>
+            <circle cx="25" cy="23" r="10" fill="#0B3D91"/>
+          </svg>
+        </span>
+        Quick Job
+      </a>
+
+      <h1>Create your account</h1>
+      <p class="auth-sub">Tell us which side of Quick Job you're joining.</p>
+
+      <div class="role-tabs" role="tablist">
+        <button type="button" class="role-tab role-tab--active" id="tabBuyer" role="tab" aria-selected="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          I need something done
+        </button>
+        <button type="button" class="role-tab" id="tabProvider" role="tab" aria-selected="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19l7-7 3 3-7 7-3-3z" stroke="currentColor" stroke-width="1.8"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          I offer a service
+        </button>
+      </div>
+
+      <form class="auth-form" onsubmit="return false;">
+        <label class="field">
+          <span>Full name</span>
+          <input type="text" placeholder="Your full name" required>
+        </label>
+
+        <label class="field">
+          <span>Email address</span>
+          <input type="email" placeholder="you@example.com" required>
+        </label>
+
+        <label class="field">
+          <span>Phone number</span>
+          <input type="tel" placeholder="e.g. 0991 234 567" required>
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <div class="field__input-wrap">
+            <input type="password" id="pw" placeholder="Create a password" required>
+            <button type="button" class="field__toggle" id="pwToggle" aria-label="Show password">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" stroke="#6B7A8F" stroke-width="1.8"/><circle cx="12" cy="12" r="3" stroke="#6B7A8F" stroke-width="1.8"/></svg>
+            </button>
+          </div>
+        </label>
+
+        <label class="checkbox checkbox--terms">
+          <input type="checkbox" required>
+          I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+        </label>
+
+        <button type="submit" class="btn btn--primary btn--block btn--lg" id="submitBtn">Create account</button>
+      </form>
+
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </main>
+
+</div>
+
+<script>
+  const pw = document.getElementById('pw');
+  document.getElementById('pwToggle').addEventListener('click', function(){
+    pw.type = pw.type === 'password' ? 'text' : 'password';
+  });
+
+  const tabBuyer = document.getElementById('tabBuyer');
+  const tabProvider = document.getElementById('tabProvider');
+  const sideImg = document.getElementById('sideImg');
+  const sideHeadline = document.getElementById('sideHeadline');
+  const sideSub = document.getElementById('sideSub');
+  const sideNote = document.getElementById('sideNote');
+  const sideStatNum = document.getElementById('sideStatNum');
+  const sideStatLabel = document.getElementById('sideStatLabel');
+  const submitBtn = document.getElementById('submitBtn');
+
+  const content = {
+    buyer: {
+      img: 'https://images.unsplash.com/photo-1697383904932-94304530a3dd?fm=jpg&q=70&w=1200&auto=format&fit=crop',
+      headline: 'Find someone who can<br>actually get it done.',
+      sub: 'Compare providers by price, rating and real past work — then pay safely.',
+      note: 'Payment protected until you confirm the work',
+      statNum: '0%',
+      statLabel: 'commission, ever',
+      button: 'Create account'
+    },
+    provider: {
+      img: 'https://images.unsplash.com/photo-1687422808191-93810cd07ab0?fm=jpg&q=70&w=1200&auto=format&fit=crop',
+      headline: "Start getting paid for<br>what you're already good at.",
+      sub: 'List your services, set your price, and get paid in full — every time.',
+      note: 'Free for your first 6 months',
+      statNum: '100%',
+      statLabel: 'of payment reaches you',
+      button: 'Start selling'
+    }
+  };
+
+  function setRole(role){
+    const c = content[role];
+    sideImg.style.opacity = 0;
+    setTimeout(() => { sideImg.src = c.img; sideImg.style.opacity = 1; }, 150);
+    sideHeadline.innerHTML = c.headline;
+    sideSub.textContent = c.sub;
+    sideNote.textContent = c.note;
+    sideStatNum.textContent = c.statNum;
+    sideStatLabel.textContent = c.statLabel;
+    submitBtn.textContent = c.button;
+
+    tabBuyer.classList.toggle('role-tab--active', role === 'buyer');
+    tabProvider.classList.toggle('role-tab--active', role === 'provider');
+    tabBuyer.setAttribute('aria-selected', role === 'buyer');
+    tabProvider.setAttribute('aria-selected', role === 'provider');
+  }
+
+  tabBuyer.addEventListener('click', () => setRole('buyer'));
+  tabProvider.addEventListener('click', () => setRole('provider'));
+</script>
+</body>
+</html>

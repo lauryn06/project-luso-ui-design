@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — Quick Job</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-wrap">
+
+  <aside class="auth-side">
+    <img class="auth-side__img" src="https://images.unsplash.com/photo-1697383904932-94304530a3dd?fm=jpg&amp;q=70&amp;w=1200&amp;auto=format&amp;fit=crop" alt="">
+    <div class="auth-side__overlay"></div>
+
+    <div class="auth-side__content">
+      <a href="index.html" class="brand brand--onphoto">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34">
+            <circle cx="15" cy="17" r="10" fill="#4C9AFF"/>
+            <circle cx="25" cy="23" r="10" fill="#FFFFFF"/>
+          </svg>
+        </span>
+        Quick Job
+      </a>
+
+      <div class="auth-side__bottom">
+        <h2>Good to have you back.</h2>
+        <p>Pick up right where you left off — new messages, orders and matches are waiting.</p>
+
+        <div class="auth-floatcard">
+          <div class="auth-floatcard__row">
+            <span class="dot dot--paid"></span>
+            <span>Payment protected on every order</span>
+          </div>
+          <div class="auth-floatcard__stat">
+            <strong>0%</strong><span>commission, always</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="auth-main">
+    <div class="auth-card">
+      <a href="index.html" class="brand auth-card__brand-mobile">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="30" height="30">
+            <circle cx="15" cy="17" r="10" fill="#4C9AFF"/>
+            <circle cx="25" cy="23" r="10" fill="#0B3D91"/>
+          </svg>
+        </span>
+        Quick Job
+      </a>
+
+      <h1>Welcome back</h1>
+      <p class="auth-sub">Log in to find a provider or manage your gigs.</p>
+
+      <form class="auth-form" onsubmit="return false;">
+        <label class="field">
+          <span>Email or phone number</span>
+          <input type="text" placeholder="you@example.com or 0991 234 567" required>
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <div class="field__input-wrap">
+            <input type="password" id="pw" placeholder="Enter your password" required>
+            <button type="button" class="field__toggle" id="pwToggle" aria-label="Show password">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" stroke="#6B7A8F" stroke-width="1.8"/><circle cx="12" cy="12" r="3" stroke="#6B7A8F" stroke-width="1.8"/></svg>
+            </button>
+          </div>
+        </label>
+
+        <div class="field-row">
+          <label class="checkbox">
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#" class="link-muted">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block btn--lg">Log in</button>
+      </form>
+
+      <div class="auth-divider"><span>or</span></div>
+
+      <button class="btn btn--outline btn--block" type="button">
+        <svg width="18" height="18" viewBox="0 0 24 24" style="margin-right:.6rem;"><path fill="#4285F4" d="M23.52 12.27c0-.85-.08-1.67-.22-2.45H12v4.64h6.47c-.28 1.5-1.13 2.77-2.4 3.62v3h3.88c2.27-2.09 3.57-5.17 3.57-8.81z"/><path fill="#34A853" d="M12 24c3.24 0 5.96-1.07 7.95-2.92l-3.88-3c-1.08.72-2.45 1.15-4.07 1.15-3.13 0-5.78-2.11-6.73-4.96H1.27v3.12C3.25 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.27a7.2 7.2 0 010-4.54V6.61H1.27a12 12 0 000 10.78l4-3.12z"/><path fill="#EA4335" d="M12 4.77c1.77 0 3.35.61 4.6 1.8l3.44-3.44C17.95 1.19 15.24 0 12 0 7.31 0 3.25 2.7 1.27 6.61l4 3.12C6.22 6.88 8.87 4.77 12 4.77z"/></svg>
+        Continue with Google
+      </button>
+
+      <p class="auth-switch">New to Quick Job? <a href="signup.html">Create an account</a></p>
+    </div>
+  </main>
+
+</div>
+
+<script>
+  const pw = document.getElementById('pw');
+  document.getElementById('pwToggle').addEventListener('click', function(){
+    pw.type = pw.type === 'password' ? 'text' : 'password';
+  });
+</script>
+</body>
+</html>

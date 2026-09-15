@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favorites — Quick Job</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dash-body">
+
+<div class="dash-shell">
+  <aside class="dash-sidebar" id="sidebar">
+    <div class="dash-sidebar__top">
+      <a href="index.html" class="brand brand--onphoto">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="30" height="30">
+            <circle cx="15" cy="17" r="10" fill="#4C9AFF"/>
+            <circle cx="25" cy="23" r="10" fill="#FFFFFF"/>
+          </svg>
+        </span>
+        Quick Job
+      </a>
+      <span class="role-pill role-pill--buyer">Buyer</span>
+    </div>
+
+    <div class="dash-profile">
+      <div class="dash-profile__avatar dash-profile__avatar--buyer">GK</div>
+      <div>
+        <p class="dash-profile__name">Grace Kamanga</p>
+        <p class="dash-profile__meta">Member since Feb 2026</p>
+      </div>
+    </div>
+
+    <nav class="dash-nav">
+      <a href="dashboard.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="12" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="16" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg>
+        Overview
+        
+      </a>
+      <a href="browse.html" class="dash-nav__item dash-nav__item--active">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Browse services
+        
+      </a>
+      <a href="myorders.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 19.5V4.5A1.5 1.5 0 015.5 3h9L20 8.5v11a1.5 1.5 0 01-1.5 1.5h-13A1.5 1.5 0 014 19.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        My orders
+        <span class="dash-nav__badge">2</span>
+      </a>
+      <a href="favorites.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7.5-4.6-10-9.2C.5 8 2 4.5 5.5 4c2-.3 3.7.7 6.5 3.3C14.8 4.7 16.5 3.7 18.5 4c3.5.5 5 4 3.5 7.3-2.5 4.6-10 9.2-10 9.2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Favorites
+        
+      </a>
+      <a href="messages.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v11H7l-3 3V5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Messages
+        <span class="dash-nav__badge dash-nav__badge--sky">1</span>
+      </a>
+      <a href="profile.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Profile
+        
+      </a>
+
+      <div class="dash-nav__divider"></div>
+
+      <a href="settings.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        Settings
+      </a>
+      <a href="login.html" class="dash-nav__item dash-nav__item--danger">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 17l5-5-5-5M21 12H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Sign out
+      </a>
+    </nav>
+  </aside>
+
+  <div class="dash-main">
+    <header class="dash-topbar">
+      <button class="dash-burger" id="dashBurger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div>
+        <h1>Favorites</h1>
+        <p>Providers you've saved for next time.</p>
+      </div>
+      <div class="dash-topbar__actions">
+        <button class="icon-btn" aria-label="Notifications">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="#1F2937" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.7 21a2 2 0 01-3.4 0" stroke="#1F2937" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span class="icon-btn__badge">1</span>
+        </button>
+        <div class="dash-topbar__avatar dash-topbar__avatar--buyer">GK</div>
+      </div>
+    </header>
+
+    <div class="browse-grid">
+      <div class="provider-card provider-card--browse">
+        <img src="https://images.unsplash.com/photo-1681164315734-355fb1131685?fm=jpg&amp;q=70&amp;w=600&amp;auto=format&amp;fit=crop" alt="">
+        <button class="fav-heart fav-heart--active" aria-label="Remove from favorites">♥</button>
+        <div class="provider-card__info">
+          <p class="provider-card__name">Chisomo Banda <span class="verified">✓</span></p>
+          <p class="provider-card__role">Graphic &amp; Logo Design</p>
+          <p class="provider-card__rating">★ 4.9 · 87 reviews</p>
+          <div class="provider-card__foot">
+            <span class="order-row__price">From MK 15,000</span>
+            <a href="#" class="btn btn--primary btn--sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="provider-card provider-card--browse">
+        <img src="https://images.unsplash.com/photo-1677495392567-aadaafb2e340?fm=jpg&amp;q=70&amp;w=600&amp;auto=format&amp;fit=crop" alt="">
+        <button class="fav-heart fav-heart--active" aria-label="Remove from favorites">♥</button>
+        <div class="provider-card__info">
+          <p class="provider-card__name">Thandiwe Phiri <span class="verified">✓</span></p>
+          <p class="provider-card__role">Event Photography</p>
+          <p class="provider-card__rating">★ 5.0 · 34 reviews</p>
+          <div class="provider-card__foot">
+            <span class="order-row__price">From MK 80,000</span>
+            <a href="#" class="btn btn--primary btn--sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="provider-card provider-card--browse">
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?fm=jpg&amp;q=70&amp;w=600&amp;auto=format&amp;fit=crop" alt="">
+        <button class="fav-heart fav-heart--active" aria-label="Remove from favorites">♥</button>
+        <div class="provider-card__info">
+          <p class="provider-card__name">Blessings Mkandawire <span class="verified">✓</span></p>
+          <p class="provider-card__role">Electrical &amp; Repairs</p>
+          <p class="provider-card__rating">★ 4.9 · 108 reviews</p>
+          <div class="provider-card__foot">
+            <span class="order-row__price">From MK 12,000</span>
+            <a href="#" class="btn btn--primary btn--sm">Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<script>
+  const burger = document.getElementById('dashBurger');
+  const sidebar = document.getElementById('sidebar');
+  burger.addEventListener('click', () => sidebar.classList.toggle('dash-sidebar--open'));
+</script>
+</body>
+</html>
