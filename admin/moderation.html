@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content moderation — Quick Job Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dash-body">
+
+<div class="dash-shell">
+<aside class="dash-sidebar" id="sidebar">
+    <div class="dash-sidebar__top">
+      <a href="index.html" class="brand brand--onphoto">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="30" height="30">
+            <circle cx="15" cy="17" r="10" fill="#4C9AFF"/>
+            <circle cx="25" cy="23" r="10" fill="#FFFFFF"/>
+          </svg>
+        </span>
+        Quick Job
+      </a>
+      <span class="role-pill role-pill--admin">Admin</span>
+    </div>
+
+    <div class="dash-profile">
+      <div class="dash-profile__avatar dash-profile__avatar--admin">NP</div>
+      <div>
+        <p class="dash-profile__name">Natasha Phiri</p>
+        <p class="dash-profile__meta">Trust &amp; Safety Lead</p>
+      </div>
+    </div>
+
+    <nav class="dash-nav">
+      <a href="dashboard.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="12" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="16" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg>
+        Overview
+        
+      </a>
+      <a href="users.html" class="dash-nav__item dash-nav__item--active">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="18" cy="8" r="2.8" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 14.3c2.8.3 4.5 2.4 4.5 5.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        Users
+        
+      </a>
+      <a href="disputes.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 16.5h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M10.3 3.9L2.6 17.5A1.8 1.8 0 004.2 20h15.6a1.8 1.8 0 001.6-2.5L13.7 3.9a1.8 1.8 0 00-3.4 0z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Disputes
+        <span class="dash-nav__badge dash-nav__badge--warn">5</span>
+      </a>
+      <a href="moderation.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Content moderation
+        <span class="dash-nav__badge dash-nav__badge--sky">3</span>
+      </a>
+      <a href="audit.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 19.5V4.5A1.5 1.5 0 015.5 3h9L20 8.5v11a1.5 1.5 0 01-1.5 1.5h-13A1.5 1.5 0 014 19.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Audit log
+        
+      </a>
+      <a href="subscriptions.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M2 10h20" stroke="currentColor" stroke-width="1.8"/></svg>
+        Subscriptions
+        
+      </a>
+
+      <div class="dash-nav__divider"></div>
+
+      <a href="settings.html" class="dash-nav__item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        Settings
+      </a>
+      <a href="login.html" class="dash-nav__item dash-nav__item--danger">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 17l5-5-5-5M21 12H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Sign out
+      </a>
+    </nav>
+  </aside>
+
+  <div class="dash-main">
+    <header class="dash-topbar">
+      <button class="dash-burger" id="dashBurger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div>
+        <h1>Content moderation</h1>
+        <p>Reported listings, reviews and messages.</p>
+      </div>
+      <div class="dash-topbar__actions">
+        <button class="icon-btn" aria-label="Notifications">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="#1F2937" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.7 21a2 2 0 01-3.4 0" stroke="#1F2937" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span class="icon-btn__badge">5</span>
+        </button>
+        <div class="dash-topbar__avatar dash-topbar__avatar--admin">NP</div>
+      </div>
+    </header>
+
+    <div class="filter-tabs">
+      <button class="filter-tab filter-tab--active">Pending <span>3</span></button>
+      <button class="filter-tab">Actioned <span>58</span></button>
+      <button class="filter-tab">Dismissed <span>14</span></button>
+    </div>
+
+    <section class="panel">
+      <ul class="moderation-list">
+        <li class="moderation-row">
+          <span class="role-tag role-tag--provider">Listing</span>
+          <div class="moderation-row__body">
+            <p class="moderation-row__title">"Fastest logo design in Malawi — guaranteed viral brand"</p>
+            <p class="moderation-row__meta">Reported by 2 users · Foster Banda · Reason: misleading claims</p>
+          </div>
+          <div class="moderation-row__actions">
+            <button class="btn btn--outline btn--sm">Dismiss</button>
+            <button class="btn btn--outline btn--sm">Warn</button>
+            <button class="btn btn--primary btn--sm">Suspend</button>
+          </div>
+        </li>
+        <li class="moderation-row">
+          <span class="role-tag role-tag--buyer">Review</span>
+          <div class="moderation-row__body">
+            <p class="moderation-row__title">"Terrible service, don't trust this guy, total scam!!"</p>
+            <p class="moderation-row__meta">Reported by provider quickfix_mw · Reason: possible abuse / no evidence</p>
+          </div>
+          <div class="moderation-row__actions">
+            <button class="btn btn--outline btn--sm">Dismiss</button>
+            <button class="btn btn--outline btn--sm">Warn</button>
+            <button class="btn btn--primary btn--sm">Remove review</button>
+          </div>
+        </li>
+        <li class="moderation-row">
+          <span class="role-tag role-tag--provider">Message</span>
+          <div class="moderation-row__body">
+            <p class="moderation-row__title">Flagged message contains a request to pay outside the platform</p>
+            <p class="moderation-row__meta">Auto-flagged · Order #Q-3379 · Reason: bypassing payment protection</p>
+          </div>
+          <div class="moderation-row__actions">
+            <button class="btn btn--outline btn--sm">Dismiss</button>
+            <button class="btn btn--outline btn--sm">Warn</button>
+            <button class="btn btn--primary btn--sm">Suspend</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+  </div>
+</div>
+
+<script>
+  const burger = document.getElementById('dashBurger');
+  const sidebar = document.getElementById('sidebar');
+  burger.addEventListener('click', () => sidebar.classList.toggle('dash-sidebar--open'));
+</script>
+</body>
+</html>
